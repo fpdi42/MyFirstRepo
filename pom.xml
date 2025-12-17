@@ -43,7 +43,8 @@
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
+            <artifactId>jaxmb-impl</artifactId>
+            <version>4.0.2</version>
         </dependency>
 
         <!-- Jackson XML -->

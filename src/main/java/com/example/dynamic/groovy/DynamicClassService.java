@@ -10,9 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Method;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 /**
  * Service för att hantera dynamisk klassgenering, instansiering och XML-marshalling
@@ -25,14 +23,12 @@ public class DynamicClassService {
     private final GroovyCodeGenerator codeGenerator;
     private final ClassDescriptorValidator validator;
     private final XmlMarshaller xmlMarshaller;
-    private final ObjectMapper objectMapper;
 
     public DynamicClassService() {
         this.dynamicClassLoader = new DynamicClassLoader();
         this.codeGenerator = new GroovyCodeGenerator();
         this.validator = new ClassDescriptorValidator();
         this.xmlMarshaller = new XmlMarshaller();
-        this.objectMapper = new ObjectMapper();
     }
 
     /**

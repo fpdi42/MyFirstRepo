@@ -4,7 +4,6 @@ import com.example.dynamic.model.ClassDescriptor;
 import com.example.dynamic.security.ClassDescriptorValidator;
 import com.example.dynamic.xml.XmlMarshaller;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

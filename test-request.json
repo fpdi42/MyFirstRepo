@@ -1,0 +1,10 @@
+{
+  "className": "Person",
+  "packageName": "com.example.dynamic.generated",
+  "fields": [
+    {"name": "firstName", "type": "String", "required": true},
+    {"name": "lastName", "type": "String", "required": true},
+    {"name": "age", "type": "int", "required": false},
+    {"name": "address", "type": "String", "required": false}
+  ]
+}

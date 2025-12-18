@@ -44,8 +44,8 @@ public class DynamicClassService {
         String sourceCode = codeGenerator.generateClassSource(descriptor);
         logger.info("Groovy-källkod genererad för: {}", descriptor.getFullyQualifiedName());
 
-        // 3. Kompilera och ladda klassen
-        Class<?> compiledClass = dynamicClassLoader.compileAndLoad(
+        // 3. Kompilera och ladda klassen (vi behöver inte själva klassreferensen här)
+        dynamicClassLoader.compileAndLoad(
                 descriptor.getFullyQualifiedName(),
                 sourceCode
         );
